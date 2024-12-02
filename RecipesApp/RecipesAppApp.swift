@@ -11,7 +11,7 @@ import SwiftUI
 struct RecipesAppApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(networkMonitor: NetworkConnection())
         }
     }
 }

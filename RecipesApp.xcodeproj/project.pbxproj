@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		530AF1D02CF5244500113CAA /* CachedAsyncImage in Frameworks */ = {isa = PBXBuildFile; productRef = 530AF1CF2CF5244500113CAA /* CachedAsyncImage */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		53D157F82CF4CE5A00429B71 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -29,9 +33,22 @@
 		53D158012CF4CE5A00429B71 /* RecipesAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RecipesAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		5322CA3E2CF5049900FA4E70 /* Exceptions for "RecipesApp" folder in "RecipesApp" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 53D157E62CF4CE5600429B71 /* RecipesApp */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		53D157E92CF4CE5600429B71 /* RecipesApp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				5322CA3E2CF5049900FA4E70 /* Exceptions for "RecipesApp" folder in "RecipesApp" target */,
+			);
 			path = RecipesApp;
 			sourceTree = "<group>";
 		};
@@ -52,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				530AF1D02CF5244500113CAA /* CachedAsyncImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +130,7 @@
 			);
 			name = RecipesApp;
 			packageProductDependencies = (
+				530AF1CF2CF5244500113CAA /* CachedAsyncImage */,
 			);
 			productName = RecipesApp;
 			productReference = 53D157E72CF4CE5600429B71 /* RecipesApp.app */;
@@ -195,6 +214,9 @@
 			);
 			mainGroup = 53D157DE2CF4CE5600429B71;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				5322CA3F2CF514C300FA4E70 /* XCRemoteSwiftPackageReference "CachedAsyncImage" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 53D157E82CF4CE5600429B71 /* Products */;
 			projectDirPath = "";
@@ -398,6 +420,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"RecipesApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RecipesApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -426,6 +449,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"RecipesApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RecipesApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -552,6 +576,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5322CA3F2CF514C300FA4E70 /* XCRemoteSwiftPackageReference "CachedAsyncImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jakirseu/CachedAsyncImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		530AF1CF2CF5244500113CAA /* CachedAsyncImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5322CA3F2CF514C300FA4E70 /* XCRemoteSwiftPackageReference "CachedAsyncImage" */;
+			productName = CachedAsyncImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 53D157DF2CF4CE5600429B71 /* Project object */;
 }
