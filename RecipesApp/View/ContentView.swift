@@ -15,6 +15,7 @@ struct ContentView: View {
     }
     func refreshData() async {
         Task{
+            isConnected = networkMonitor.execute()
             await viewModel.fetchRecipes()
         }
     }
@@ -54,7 +55,6 @@ struct ContentView: View {
         }
         .onAppear(){
             Task{
-                isConnected = networkMonitor.execute()
                 await refreshData()
             }
         }
